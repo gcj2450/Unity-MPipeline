@@ -98,7 +98,7 @@ namespace MPipeline
         private void OnDrawGizmosSelected()
         {
             GizmosHelper gz = new GizmosHelper();
-            gz.Init();
+            //gz.Init();
             Gizmos.matrix = transform.localToWorldMatrix;
             Gizmos.color = new Color(1, 1, 1, 0.4f);
             Gizmos.DrawWireCube(Vector3.zero, Vector3.one);
@@ -106,7 +106,7 @@ namespace MPipeline
             gz.Dispose();
 
             gz = new GizmosHelper();
-            gz.Init();
+            //gz.Init();
             Gizmos.matrix = transform.localToWorldMatrix;
             Gizmos.color = new Color(0, 0, 1, 0.2f);
             Gizmos.DrawCube(Vector3.zero, Vector3.one);

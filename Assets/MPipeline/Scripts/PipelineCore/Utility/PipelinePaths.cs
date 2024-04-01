@@ -18,10 +18,15 @@ namespace MPipeline
         public ComputeShader occlusionProbeCalculate;
         public ComputeShader minMaxDepthCompute;
         public ComputeShader HizLodShader;
+		public ComputeShader relightProbes;
         public Shader minMaxDepthBounding;
         public Shader taaShader;
         public Shader ssrShader;
         public Shader indirectDepthShader;
+        public Shader depthDownSample;
+        public Shader copyShader;
+        //public Shader HizLodShader;
+        public Shader motionVectorShader;
         public Shader reflectionShader;
         public Shader linearDepthShader;
         public Shader linearDrawerShader;
@@ -32,8 +37,11 @@ namespace MPipeline
         public Shader spotLightDepthShader;
         public Shader gtaoShader;
         public Shader overrideOpaqueShader;
+        public Shader ssgiShader;
         public Shader sssShader;
         public Shader bakePreIntShader;
+		public Mesh occluderMesh;
+        public Mesh sphereMesh;
         public Shader rapidBlurShader;
         public Shader cyberGlitchShader;
     }

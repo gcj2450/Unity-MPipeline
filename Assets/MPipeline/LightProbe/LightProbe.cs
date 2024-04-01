@@ -27,7 +27,6 @@ namespace MPipeline
         {
             if (!showVolumeInScene) return;
             GizmosHelper gz = new GizmosHelper();
-            gz.Init();
             Gizmos.matrix = transform.localToWorldMatrix;
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireCube(Vector3.zero, volumeSize);
